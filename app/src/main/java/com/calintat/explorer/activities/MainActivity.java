@@ -1,6 +1,7 @@
 package com.calintat.explorer.activities;
 
 import android.Manifest;
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
@@ -441,6 +442,7 @@ public class MainActivity extends AppCompatActivity {
         textView.setOnClickListener(v -> startActivity(new Intent(Settings.ACTION_INTERNAL_STORAGE_SETTINGS)));
     }
 
+    @SuppressLint("RestrictedApi")
     private void initRecyclerView() {
 
         adapter = new Adapter(this);
