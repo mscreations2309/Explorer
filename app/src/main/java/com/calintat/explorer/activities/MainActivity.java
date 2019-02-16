@@ -245,6 +245,7 @@ public class MainActivity extends AppCompatActivity {
             menu.findItem(R.id.action_send).setVisible(count >= 1);
 
             menu.findItem(R.id.action_sort).setVisible(count == 0);
+
         }
 
         return super.onPrepareOptionsMenu(menu);
